@@ -1,0 +1,340 @@
+
+/*!
+ * optmus v1.0.0 (https://getbootstrap.com)
+ * Copyright 2019-2018 Ernesto Argentina
+ * Licensed under MIT (https://github.com/ErnestoArgentina/optmus/LICENSE)
+ */
+
+
+/*==============================================
+===================Panels========================
+===============================================*/
+.optmus{
+	position: relative;
+	height: calc(100vh - 10px);
+	width: 100vw;
+	/*background: #F06;*/
+	overflow: hidden;
+}
+.optmus .optmus-container{
+	position: absolute;
+	height: 200%;
+	width:  200%;
+	/*background: green;*/
+	top: -100%;
+	left: 0%;
+	/*transition: 2s cubic-bezier(.68,-0.55,.27,1.55);*/
+	transition: 3s cubic-bezier(.68,-0.55,.27,1.55);
+	overflow: hidden;
+	transform: scale(1);
+}
+.optmus .optmus-container .optmus-panel{
+	overflow-y: scroll;
+	transition: .5s;
+	transform: scale(.8);
+}
+.optmus .optmus-container .optmus-panel:hover{
+	transform: scale(1);
+}
+.optmus .optmus-container .optmus-panel:nth-child(1){
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 50%;
+	width: 50%;
+	/*background: red;*/
+}
+.optmus .optmus-container .optmus-panel:nth-child(2){
+	position: absolute;
+	top: 0%;
+	left: 0;
+	height: 25%;
+	width: 25%;
+	/*background: red;*/
+}
+.optmus .optmus-container .optmus-panel:nth-child(3){
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	height: 25%;
+	width: 25%;
+	/*background: red;*/
+}
+.optmus .optmus-container .optmus-panel:nth-child(4){
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	height: 12.5%;
+	width: 12.5%;
+	/*background: red;*/
+}
+.optmus .optmus-container .optmus-panel:nth-child(5){
+	position: absolute;
+	top: 62.5%;
+	left: 87.5%;
+	height: 12.5%;
+	width: 12.5%;
+	/*background: red;*/
+}
+.optmus .optmus-container .optmus-panel:nth-child(6){
+	position: absolute;
+	top: 75%;
+	left: 75%;
+	height: 25%;
+	width: 25%;
+	/*background: yellow;*/
+}
+.optmus .optmus-container .optmus-panel:nth-child(7){
+	position: absolute;
+	top: 0%;
+	left: 87.5%;
+	height: 12.5%;
+	width: 12.5%;
+	/*background: blue;*/
+}
+
+
+/*=============================================
+===================Nav=========================
+===============================================*/
+.optmus-nav{
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: 40px;
+	border-radius: 50px;
+	background: #ffffffbb;
+	transform: translateX(-50%);
+	z-index: 1000;
+	transition: .5s;
+}
+.optmus-nav:hover{
+	background: #ffffffff;
+}
+.optmus-nav .optmus-nav-list, .optmus-nav ul{
+	position: relative;
+	top: 0;
+	margin-top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	text-decoration: none;
+	list-style: none;
+	/*background: #000;*/
+}
+.optmus-nav .optmus-nav-list li, .optmus-nav ul li{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	color: #60f;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	line-style: dot;
+	/*height: 100%;*/
+}
+.optmus-nav .optmus-nav-list li button, .optmus-nav ul li button, .optmus-nav ul li *{
+	background: none;
+	color: #60f;
+	border:none;
+	text-decoration: none;
+	box-decoration-break: none;
+}
+.optmus-nav .optmus-nav-list li *:hover, .optmus-nav ul li *:hover{
+	background: none;
+	color: #60a;
+	border-bottom:2px solid #60f;
+	text-decoration: none;
+}
+/*//*/
+.optmus-nav .optmus-nav-list li:before, .optmus-nav ul li:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0%;
+	height: 2px;
+	background: #ffffff00;
+	transition: .5s;
+}
+.optmus-nav .optmus-nav-list li.brand, .optmus-nav ul li.brand{
+	margin-right: 50px;
+	margin-left: 0;
+	font-weight: bold;
+}
+.optmus-nav .optmus-nav-list li *.brand, .optmus-nav ul li *.brand{
+	margin-left: 0 !important;
+	margin-right: 50px;
+	font-weight: bold;
+}
+.optmus-nav .optmus-nav-list li:hover~ul li:before, .optmus-nav ul li:hover~ul li:before{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #60f;
+}
+/**/
+.optmus-nav .optmus-nav-list li:after, .optmus-nav ul li:after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #999;
+	left: -20px;
+	transform:translateY(-50%) rotate(45deg);
+	top: 50%;
+}
+.optmus-nav .optmus-nav-list li:nth-child(1):after, .optmus-nav ul li:nth-child(1):after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border: none;
+}
+.optmus-nav .optmus-nav-list li:nth-child(1), .optmus-nav ul li:nth-child(1){
+	margin-left: 0;
+}
+
+
+/*==========================================
+===========optmus images====================*/
+/*==========================================*/
+
+.optmus-image{
+  animation: dez 12s infinite;
+  position: relative;
+}
+.optmus-image:hover~*.parte{
+  animation: none;
+}
+.optmus-image img:nth-child(1){
+  position: relative;
+  width: 100%;
+  opacity: .1;
+  z-index: 0;
+}
+.optmus-image .parte{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+.optmus-image .parte img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.optmus-image .parte:nth-child(2){
+   animation: optmus-parte-4 6s infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+}
+.optmus-image .parte:nth-child(2)  img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.optmus-image .parte:nth-child(3){
+   animation: optmus-parte-4 4s infinite;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+.optmus-image .parte:nth-child(3)  img{
+  position: absolute;
+  width: 100%;
+  top: -100%;
+}
+.optmus-image .parte:nth-child(4){
+   animation: optmus-parte-4 6s infinite;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+.optmus-image .parte:nth-child(4)  img{
+  position: absolute;
+  width: 100%;
+  top: -200%;
+}
+.optmus-image .parte:nth-child(5){
+  animation: optmus-parte-4 4s infinite;
+  top: 60%;
+  left: 0px;
+  width: 50%;
+  height: 20%;
+}
+.optmus-image .parte:nth-child(5)  img{
+  position: absolute;
+  width: 200%;
+  top: -300%;
+}
+.optmus-image .parte:nth-child(6){
+  animation: optmus-parte-4-5 6s infinite;
+  top: 60%;
+  left: 50%;
+  width: 50%;
+  height: 20%;
+}
+.optmus-image .parte:nth-child(6)  img{
+  position: absolute;
+  width: 200%;
+  top: -300%;
+  left: -100%;
+}
+.optmus-image .parte:nth-child(7){
+  animation: optmus-parte-4 2s infinite;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+.optmus-image .parte:nth-child(7)  img{
+  position: absolute;
+  width: 100%;
+  top: -400%;
+}
+.optmus-image .parte:nth-child(8){
+  animation: optmus-parte-4 6s infinite;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+.optmus-image .parte:nth-child(8)  img{
+  position: absolute;
+  width: 100%;
+  top: -500%;
+}
+
+
+
+/*================================================
+============ANIMATION===========================
+===============================================*/
+@keyframes rect-r{
+  0%{   background: #f9dc0044;}
+  50%{   background: #f9dc00aa;}
+  100%{   background: #f9dc0044; }
+}
+@keyframes optmus-parte-4{
+  0%{ left: 0;}
+  50%{   left: 5%;}
+  80%{   left: -5%;}
+  100%{  left: 0%;}
+}
+@keyframes optmus-parte-4-5{
+  0%{ left: 50%;}
+  50%{   left: 55%;}
+  80%{   left: 45%;}
+  100%{  left: 50%;}
+}
+@keyframes dez{
+  0%{ border:none;}
+  98%{ border:none;}
+  100%{ border:3px solid #fff;}
+}
