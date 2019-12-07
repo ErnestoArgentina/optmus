@@ -3,7 +3,7 @@ super panel and image
 
 
 
-<h1>Optmus Panel</h1>
+<h1>Optmus Panel
 <p>
 <,div class="optmus" > <br>
 	<,div class="optmus-container">  <br>
@@ -27,7 +27,7 @@ super panel and image
 	</p>
 
 
-<h1> Optmus image <h1>
+<h1> Optmus image 
 <p>
 <,div class="optmus-image"> <br>
 	<,img src="images/yourImage.jpg"> <br>
