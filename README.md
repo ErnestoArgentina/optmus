@@ -3,36 +3,36 @@ super panel and image
 
 
 
-<h1>Optmus Panel
-<p>
+<h1>Optmus Panel </h1>
+<h3>
 <,div class="optmus" > <br>
-	<,div class="optmus-container">  <br>
-		 <,div class="optmus-panel">  <br>
-			panel 1  <br>
-		<,/div>  <br>
-		 <,div class="optmus-panel">  <br>
-			panel 2  <br>
-		<,/div>  <br>
-		 <,div class="optmus-panel">  <br>
-			panel 3  <br>
-		<,/div>  <br>
-		 <,div class="optmus-panel">  <br>
-			panel 4  <br>
-		<,/div>  <br>
-		 <,div class="optmus-panel">  <br>
-			panel ....7  <br>
-		<,/div>  <br>
-	<,/div>  <br>
+	_<,div class="optmus-container">  <br>
+		 __<,div class="optmus-panel">  <br>
+			___panel 1  <br>
+		__<,/div>  <br>
+		 __<,div class="optmus-panel">  <br>
+		___	panel 2  <br>
+		__<,/div>  <br>
+		 __<,div class="optmus-panel">  <br>
+		___	panel 3  <br>
+		__<,/div>  <br>
+		 __<,div class="optmus-panel">  <br>
+		___	panel 4  <br>
+		__<,/div>  <br>
+		 __<,div class="optmus-panel">  <br>
+		___	panel ....7  <br>
+		__<,/div>  <br>
+	_<,/div>  <br>
 <,/div>
-	</p>
+	</h3>
 
 
-<h1> Optmus image 
-<p>
+<h1> Optmus image </h1>
+<h3>
 <,div class="optmus-image"> <br>
 	<,img src="images/yourImage.jpg"> <br>
 <,/div> <br>
-	</p>
+	</h3>
 
 
 see any exemple on: https://erman.herokuapp.com
