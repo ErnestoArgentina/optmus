@@ -1,7 +1,7 @@
 
 /*!
- * optmus v1.0.0 (https://getbootstrap.com)
- * Copyright 2019-2018 Ernesto Argentina
+ * optmus v1.0.0 (https://erman.herokuapp.com.com)
+ * Copyright 2018 Ernesto Argentina
  * Licensed under MIT (https://github.com/ErnestoArgentina/optmus/LICENSE)
  */
 
