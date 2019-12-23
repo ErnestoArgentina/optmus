@@ -5,7 +5,7 @@ super panel and image
 
 <h1>Optmus Panel </h1>
 <h3>
-```html
+```
 <div class="optmus" > <br>
 	<div class="optmus-container">  <br>
 		<div class="optmus-panel">  <br>
