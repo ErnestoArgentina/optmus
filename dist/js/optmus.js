@@ -1,7 +1,7 @@
 
-/*!
- * optmus v1.0.0 (https://erman.herokuapp.com.com)
- * Copyright 2018 Ernesto Argentina
+/*
+ * optmus v1.0.1 (https://getbootstrap.com)
+ * Copyright 2020 Ernesto Argentina
  * Licensed under MIT (https://github.com/ErnestoArgentina/optmus/LICENSE)
  */
 
@@ -80,3 +80,22 @@ var optmusImages_p = document.querySelectorAll(".optmus-image .parte img"); //ar
 for (var j = 0; j < optmusImages_p.length; j++) {
   optmusImages_p[j].style.opacity="1";
 }
+
+// /*
+// * leva a imagem dentro da div optmus-image colar adicionar dentro da div parte
+// * de seguida adiciona todas divs parte a div optmus-image
+// */
+// for (var j = 0; j < optmusImages.length; j++) {
+//   let image = optmusImages[j].innerHTML;
+//   domOptmusImage = '';
+//   domOptmusImage += image;
+//   for (var i = 1; i <= 7; i++) {
+//     domOptmusImage += "<div class='parte'>"+image+"</div>";
+//   }
+//   optmusImages[j].innerHTML = domOptmusImage;
+// }
+
+// var optmusImages_p = document.querySelectorAll(".optmus-image .parte img"); //arrat de imagens ...
+// for (var j = 0; j < optmusImages_p.length; j++) {
+//   optmusImages_p[j].style.opacity="1";
+// }
