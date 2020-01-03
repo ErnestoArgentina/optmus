@@ -1,7 +1,7 @@
 
-/*!
- * optmus v1.0.0 (https://erman.herokuapp.com)
- * Copyright 2018 Ernesto Argentina
+/*
+ * optmus v1.0.1 (https://getbootstrap.com)
+ * Copyright 2019-2018 Ernesto Argentina
  * Licensed under MIT (https://github.com/ErnestoArgentina/optmus/LICENSE)
  */
 
@@ -10,9 +10,16 @@
 /*==============================================
 ===================Panels========================
 ===============================================*/
+.optmus-bg{
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+}
 .optmus{
 	position: relative;
-	height: calc(100vh - 10px);
+	height: calc(100vh);
 	width: 100vw;
 	/*background: #F06;*/
 	overflow: hidden;
@@ -25,14 +32,17 @@
 	top: -100%;
 	left: 0%;
 	/*transition: 2s cubic-bezier(.68,-0.55,.27,1.55);*/
-	transition: 3s cubic-bezier(.68,-0.55,.27,1.55);
+	transition: 3s cubic-bezier(.64,-0.02,.39,1.16);
 	overflow: hidden;
 	transform: scale(1);
+}
+.optmus .optmus-chill{
+	transition: 3s cubic-bezier(.64,-0.02,.39,1.16) !important;
 }
 .optmus .optmus-container .optmus-panel{
 	overflow-y: scroll;
 	transition: .5s;
-	transform: scale(.8);
+	transform: scale(.95);
 }
 .optmus .optmus-container .optmus-panel:hover{
 	transform: scale(1);
