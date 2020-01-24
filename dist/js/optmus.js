@@ -97,5 +97,7 @@ for (var j = 0; j < optmusImages_p.length; j++) {
 
 // var optmusImages_p = document.querySelectorAll(".optmus-image .parte img"); //arrat de imagens ...
 // for (var j = 0; j < optmusImages_p.length; j++) {
-//   optmusImages_p[j].style.opacity="1";
+//  
+
+ optmusImages_p[j].style.opacity="1";
 // }
