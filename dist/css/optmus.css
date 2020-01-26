@@ -36,7 +36,8 @@
 	top: -100%;
 	left: 0%;
 	/*transition: 2s cubic-bezier(.68,-0.55,.27,1.55);*/
-	transition: 3s cubic-bezier(.68,-0.55,.27,1.55);
+	/*transition: 3s cubic-bezier(.68,-0.55,.27,1.55);*/
+	transition: 3s cubic-bezier(.64,-0.02,.39,1.16);
 	overflow: hidden;
 	transform: scale(1);
 }
