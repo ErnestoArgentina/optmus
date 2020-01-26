@@ -1,10 +1,14 @@
 
-/*
- * optmus v1.0.1 (https://getbootstrap.com)
- * Copyright 2020 Ernesto Argentina
+/*!
+ * optmus v1.0.0 (https://erman.herokuapp.com)
+ * Copyright 2019-2020 Ernesto Argentina
  * Licensed under MIT (https://github.com/ErnestoArgentina/optmus/LICENSE)
  */
 
+
+
+
+// ==========optmus panel=============
 
 function optmusPanel(panel){
 	var painel = document.querySelector(".optmus .optmus-container");
@@ -63,7 +67,7 @@ var optmusImages = document.querySelectorAll(".optmus-image");
 var domOptmusImage = '';
 
 /*
-* leva a imagem dentro da div optmus-image colar adicionar dentro da div parte
+* leva a imagem dentro da div optmus-image colar/adicionar dentro das divs parte
 * de seguida adiciona todas divs parte a div optmus-image
 */
 for (var j = 0; j < optmusImages.length; j++) {
@@ -76,28 +80,64 @@ for (var j = 0; j < optmusImages.length; j++) {
   optmusImages[j].innerHTML = domOptmusImage;
 }
 
-var optmusImages_p = document.querySelectorAll(".optmus-image .parte img"); //arrat de imagens ...
+var optmusImages_p = document.querySelectorAll(".optmus-image .parte img"); //array de imagens ...
 for (var j = 0; j < optmusImages_p.length; j++) {
   optmusImages_p[j].style.opacity="1";
 }
 
-// /*
-// * leva a imagem dentro da div optmus-image colar adicionar dentro da div parte
-// * de seguida adiciona todas divs parte a div optmus-image
-// */
-// for (var j = 0; j < optmusImages.length; j++) {
-//   let image = optmusImages[j].innerHTML;
-//   domOptmusImage = '';
-//   domOptmusImage += image;
-//   for (var i = 1; i <= 7; i++) {
-//     domOptmusImage += "<div class='parte'>"+image+"</div>";
-//   }
-//   optmusImages[j].innerHTML = domOptmusImage;
-// }
 
-// var optmusImages_p = document.querySelectorAll(".optmus-image .parte img"); //arrat de imagens ...
-// for (var j = 0; j < optmusImages_p.length; j++) {
-//  
+// ==============title==============
+// ao clicar no menu o titulo muda de acordo com o testo na acncora <a>
+try{
+  var siteName = document.querySelector('title').innerHTML;
+  if(siteName == ' ' || siteName == ''){
+  	siteName = "Optmus Site (by Ernesto Argentina) [ Add a title for your website]";
+  	console.log('Add a title for your website');
+  }
+}catch(e){
+  var siteName = "Optmus Site (by Ernesto Argentina) [ Add a title for your website]";
+  console.log('Add a title for your website');
+}
+const navList = document.querySelector('.optmus-options');
 
- optmusImages_p[j].style.opacity="1";
-// }
+navList.addEventListener('click', function(e){
+   if(e.target.tagName == 'A'){
+     try{
+       document.querySelector('title').innerHTML = e.target.innerHTML+" - "+siteName;
+     }
+     catch(c){
+       console.log("optmus title report: Add a title for your website")
+       document.querySelector('head').innerHTML += "<title>" + e.target.innerHTML+" - "+siteName + "</title>";
+     }
+   }
+ });
+
+
+// ====================================
+// ===========// nav left==============
+// ====================================
+var navLf = 0;
+
+function optmusNavLf(){
+	var nav = document.querySelector('.optmus');
+	var nav_lf = document.querySelector('.optmus-nav-lf');
+	if(navLf == 0){
+		navLf = 1;
+		nav.style.left="200px";
+		// nav.style.transform = "rotateY(330deg) rotateX(0) scale(.7)";
+		nav.style.transform = "rotateY(-30deg) rotateX(0) scale(.7)";
+		nav_lf.style.left = "0";
+		nav_lf.style.borderBottomRightRadius = "0px";
+		nav_lf.style.borderTopRightRadius = "0px";
+	}else{
+		navLf = 0;
+		nav.style.left="0px";
+		// nav.style.transform = "rotateY(360deg) rotateX(0) scale(1)";
+		nav.style.transform = "rotateY(0deg) rotateX(0) scale(1)";
+		nav_lf.style.left = "-200px";
+		nav_lf.style.borderBottomRightRadius = "90%";
+		nav_lf.style.borderTopRightRadius = "90%";
+	}
+	// alert(navLf)
+
+}
