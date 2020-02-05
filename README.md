@@ -1,5 +1,5 @@
 # optmus
-super panel and image
+optmus is a free lib that you can use to create a modern website with awesome panel/page transition's and image efects
 
 
 
