@@ -85,7 +85,28 @@ for (var j = 0; j < optmusImages_p.length; j++) {
   optmusImages_p[j].style.opacity="1";
 }
 
+///optmus image slice effect
+var optmusImages_slice = document.querySelectorAll(".optmus-image-slice");
+var domOptmusImage_slice = '';
 
+	console.log("optmusImages_slice", optmusImages_slice)
+
+for (var j_slice = 0; j_slice < optmusImages_slice.length; j_slice++) {
+  let image = optmusImages_slice[j_slice].innerHTML;
+  domOptmusImage_slice = '';
+  domOptmusImage_slice += image;
+  for (var i = 1; i <= 7; i++) {
+    domOptmusImage_slice += "<div class='parte-slice'>"+image+"</div>";
+  }
+  optmusImages_slice[j_slice].innerHTML = domOptmusImage_slice;
+}
+var optmusImages_slice_p = document.querySelectorAll(".optmus-image-slice .parte-slice img");
+for (var j_slice = 0; j_slice < optmusImages_slice_p.length; j_slice++) {
+  optmusImages_slice_p[j_slice].style.opacity="1";
+}
+// end slice effect
+
+// =================================
 // ==============title==============
 // ao clicar no menu o titulo muda de acordo com o testo na acncora <a>
 try{
